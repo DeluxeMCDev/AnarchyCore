@@ -1,0 +1,29 @@
+name: AnarchyCore
+version: '${project.version}'
+main: net.authink.anarchycore.AnarchyCore
+api-version: '1.20'
+load: STARTUP
+folia-supported: true
+commands:
+  msg:
+    description: Send a private message to a player.
+  whisper:
+    description: Send a private message to a player.
+  pm:
+    description: Send a private message to a player.
+  w:
+    description: Send a private message to a player.
+  r:
+    description: Reply to the last private message received.
+  reply:
+    description: Reply to the last private message received.
+  l:
+    description: Reply to the last private message sent.
+  last:
+    description: Reply to the last private message sent.
+  kill:
+    description: Kill yourself.
+  help:
+    description: Show available commands and their usage.
+
+
