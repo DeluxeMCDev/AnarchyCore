@@ -119,7 +119,7 @@ public final class AnarchyCore extends JavaPlugin implements Listener {
         }
 
         String uptime = parseUnix(Instant.now().getEpochSecond() - startTime.getEpochSecond());
-        String footer = ChatColor.translateAlternateColorCodes('&', "&cTPS&f: " + tpsColor + " &8| &cOnline Players&f: &6" + getServer().getOnlinePlayers().size() + " &8| &cUptime&f: &a" + uptime + " &8| &cPing&f: " + pingColor + "ms\n&7Contact us at " + tab_email);
+        String footer = ChatColor.translateAlternateColorCodes('&', "&cTPS&f: " + tpsColor + " &8| &cOnline Players&f: &6" + getServer().getOnlinePlayers().size() + " &8| &cUptime&f: &a" + uptime + " &8| &cPing&f: " + pingColor + "ms\n&7Check out our github: https://github.com/DeluxeMCDev\n&7Contact us at " + tab_email);
         player.setPlayerListHeaderFooter(header, footer);
     }
 
