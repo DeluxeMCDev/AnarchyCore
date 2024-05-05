@@ -2,6 +2,9 @@ name: AnarchyCore
 version: '${project.version}'
 main: net.authink.anarchycore.AnarchyCore
 api-version: '1.20'
+authors:
+  - ZribeDev
+  - DeluxeMC Team
 load: STARTUP
 folia-supported: true
 commands:

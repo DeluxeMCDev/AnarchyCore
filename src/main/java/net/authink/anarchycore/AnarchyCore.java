@@ -43,6 +43,25 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public final class AnarchyCore extends JavaPlugin implements Listener {
+
+
+
+
+    // MODIFICATIONS
+    String tab_header = "&6DeluxeMC";
+    String tab_email = "admin@deluxemc.net";
+
+
+
+
+
+
+
+
+
+
+
+    // DON'T TOUCH IF YOU DO NOT UNDERSTAND !!!
     private final HashMap<UUID, UUID> lastMessaged = new HashMap<>();
     private final HashMap<UUID, UUID> lastMessager = new HashMap<>();
     private Instant startTime;
@@ -79,7 +98,7 @@ public final class AnarchyCore extends JavaPlugin implements Listener {
     }
 
     private void updateTabForPlayer(org.bukkit.entity.Player player, double tps, int ping) {
-        String header = ChatColor.translateAlternateColorCodes('&', "&6DeluxeMC\n");
+        String header = ChatColor.translateAlternateColorCodes('&', tab_header+"\n");
         String tpsColor;
         String pingColor;
 
@@ -100,7 +119,7 @@ public final class AnarchyCore extends JavaPlugin implements Listener {
         }
 
         String uptime = parseUnix(Instant.now().getEpochSecond() - startTime.getEpochSecond());
-        String footer = ChatColor.translateAlternateColorCodes('&', "&cTPS&f: " + tpsColor + " &8| &cOnline Players&f: &6" + getServer().getOnlinePlayers().size() + " &8| &cUptime&f: &a" + uptime + " &8| &cPing&f: " + pingColor + "ms\n&7Contact us at admin@deluxemc.net");
+        String footer = ChatColor.translateAlternateColorCodes('&', "&cTPS&f: " + tpsColor + " &8| &cOnline Players&f: &6" + getServer().getOnlinePlayers().size() + " &8| &cUptime&f: &a" + uptime + " &8| &cPing&f: " + pingColor + "ms\n&7Contact us at " + tab_email);
         player.setPlayerListHeaderFooter(header, footer);
     }
 
